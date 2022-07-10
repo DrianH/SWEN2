@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.*?>
+
+
+<?import javafx.scene.control.Button?>
+<VBox prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/18"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.tourplanner.MVVM.Controller.VideoController">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="600.0" fitWidth="800.0" />
+       <Button mnemonicParsing="false" onAction="#playPauseClicked" text="Play/Pause" alignment="BASELINE_CENTER"/>
+   </children>
+</VBox>

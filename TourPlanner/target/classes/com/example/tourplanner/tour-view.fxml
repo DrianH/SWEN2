@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <BorderPane prefHeight="176.0" prefWidth="350.0" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0"
+                    AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <center>
+                <VBox prefWidth="350.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+                            <VBox.margin>
+                                <Insets bottom="5.0"/>
+                            </VBox.margin>
+                        </Text>
+
+                        <TextField fx:id="tourNameField">
+                            <VBox.margin>
+                                <Insets bottom="15.0"/>
+                            </VBox.margin>
+                        </TextField>
+
+                        <Text layoutX="20.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From">
+                            <VBox.margin>
+                                <Insets bottom="5.0"/>
+                            </VBox.margin>
+                        </Text>
+
+                        <TextField fx:id="tourFromField" layoutX="20.0" layoutY="42.0">
+                            <VBox.margin>
+                                <Insets bottom="15.0"/>
+                            </VBox.margin>
+                        </TextField>
+
+                        <Text layoutX="20.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To">
+                            <VBox.margin>
+                                <Insets bottom="5.0"/>
+                            </VBox.margin>
+                        </Text>
+
+                        <TextField fx:id="tourToField" layoutX="20.0" layoutY="98.0">
+                            <VBox.margin>
+                                <Insets bottom="15.0"/>
+                            </VBox.margin>
+                        </TextField>
+
+                        <Text layoutX="20.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transport Type">
+                            <VBox.margin>
+                                <Insets bottom="5.0"/>
+                            </VBox.margin>
+                        </Text>
+
+                        <ComboBox fx:id="tourTransportMenu" layoutX="20.0" layoutY="95.0" prefWidth="350.0">
+                            <VBox.margin>
+                                <Insets bottom="10.0"/>
+                            </VBox.margin>
+                        </ComboBox>
+
+                        <Text layoutX="20.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description">
+                            <VBox.margin>
+                                <Insets bottom="5.0"/>
+                            </VBox.margin>
+                        </Text>
+
+                        <TextArea fx:id="tourDescField" prefHeight="200.0" prefWidth="200.0" wrapText="true">
+                            <VBox.margin>
+                                <Insets bottom="15.0"/>
+                            </VBox.margin>
+                        </TextArea>
+
+                        <HBox alignment="TOP_RIGHT" prefWidth="200.0">
+                            <children>
+                                <Button mnemonicParsing="false" onAction="#tourCancelButton" text="Cancel">
+                                    <HBox.margin>
+                                        <Insets right="15.0"/>
+                                    </HBox.margin>
+                                </Button>
+                                <Button layoutX="295.0" layoutY="10.0" mnemonicParsing="false" onAction="#tourApplyButton" text="Apply"/>
+                            </children>
+                        </HBox>
+                    </children>
+
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                    </padding>
+                </VBox>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>
